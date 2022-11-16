@@ -1,0 +1,29 @@
+{
+  "name": "justShoppingCart",
+  "version": "1.0.0",
+  "description": "Full-stack eCommerce app made with create-react-app client and Node server",
+  "main": "index.js",
+  "scripts": {
+    "start:back": "nodemon server/index",
+    "start:front": "cd client && npm start",
+    "start": "concurrently -k npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^1.44.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.0",
+    "morgan": "^1.10.0",
+    "react-router-dom": "^6.4.3",
+    "stripe": "^10.17.0",
+    "use-shopping-cart": "^3.1.3"
+  }
+}
